@@ -4,55 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#9AE37D"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/song_title" />
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/song_title"
+        android:textColor="#4268DD"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/etTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Enter Song Title"
-        android:importantForAutofill="no" />
+        android:text="Enter Song Title" />
 
     <TextView
         android:id="@+id/tvSingers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/singers" />
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/singers"
+        android:textColor="#182391"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/etSingers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Enter Singer Name"
-        android:importantForAutofill="no" />
+        android:text="Enter Singer Name" />
 
     <TextView
         android:id="@+id/tvYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/year" />
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/year"
+        android:textColor="#182391"
+        android:textSize="16sp" />
 
     <EditText
         android:id="@+id/etYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Enter Year"
-        android:importantForAutofill="no" />
+        android:text="Enter Year" />
 
     <TextView
         android:id="@+id/tvStars"
@@ -70,35 +83,50 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/_1" />
+            android:fontFamily="casual"
+            android:text="@string/_1"
+            android:textColor="#386FC5"
+            android:textSize="14sp" />
 
         <RadioButton
             android:id="@+id/rbtn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/_2" />
+            android:fontFamily="casual"
+            android:text="@string/_2"
+            android:textColor="#386FC5"
+            android:textSize="14sp" />
 
         <RadioButton
             android:id="@+id/rbtn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/_3" />
+            android:fontFamily="casual"
+            android:text="@string/_3"
+            android:textColor="#386FC5"
+            android:textSize="14sp" />
 
         <RadioButton
             android:id="@+id/rbtn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/_4" />
+            android:fontFamily="casual"
+            android:text="@string/_4"
+            android:textColor="#386FC5"
+            android:textSize="14sp" />
 
         <RadioButton
             android:id="@+id/rbtn5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/_5" />
+            android:fontFamily="casual"
+            android:text="@string/_5"
+            android:textColor="#386FC5"
+            android:textSize="14sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -111,14 +139,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Show List" />
+            android:fontFamily="casual"
+            android:text="Show List"
+            android:textColor="#F4F7FB"
+            android:textSize="14sp"
+            app:backgroundTint="#3FA0BD" />
 
         <Button
             android:id="@+id/btnInsert"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="insert" />
+            android:fontFamily="casual"
+            android:text="insert"
+            android:textColor="#F0F3F8"
+            android:textSize="14sp"
+            app:backgroundTint="#75A9D3" />
 
     </LinearLayout>
 
