@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity<data> extends AppCompatActivity {
 
     Button btnUpdate, btnDelete, btnCancel;
     RadioButton rbtn1, rbtn2, rbtn3, rbtn4, rbtn5;
@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Song> al;
     ListView lv;
     ArrayAdapter<Song> aa;
+    Song data;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
         etSingers = findViewById(R.id.etSingers);
         etYear = findViewById(R.id.etYear);
 
+        Intent i = getIntent();
+        data = (Song) i.getSerializableExtra("data");
+
         al = new ArrayList<Song>();
         aa = new ArrayAdapter<Song>(this,
                 android.R.layout.simple_list_item_1, al);
@@ -60,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DBHelper dbh = new DBHelper(MainActivity.this);
+                dbh.deleteSong(data.getId());
 
             }
         });

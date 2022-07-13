@@ -52,4 +52,13 @@ public class DBHelper extends SQLiteOpenHelper{
         sqLiteDatabase.execSQL("ALTER TABLE " + TABLE_NOTE + " ADD COLUMN  module_name TEXT ");
 
     }
+
+    public int deleteSong(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String condition = COLUMN_ID + "= ?";
+        String[] args = {String.valueOf(id)};
+        int result = db.delete(TABLE_NOTE, condition, args);
+        db.close();
+        return result;
+    }
 }
