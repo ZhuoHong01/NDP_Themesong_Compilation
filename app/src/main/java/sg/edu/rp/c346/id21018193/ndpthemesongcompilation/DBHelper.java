@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.util.ArrayList;
+
 public class DBHelper extends SQLiteOpenHelper{
     private static final int DATABASE_VERSION = 2;
     private static final String DATABASE_NAME = "songs.db";
@@ -51,6 +53,21 @@ public class DBHelper extends SQLiteOpenHelper{
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         sqLiteDatabase.execSQL("ALTER TABLE " + TABLE_NOTE + " ADD COLUMN  module_name TEXT ");
 
+    }
+
+
+    public int updateSong(Song data){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_TITLE, data.getTitle());
+        values.put(COLUMN_SINGERS, data.getSingers());
+        values.put(COLUMN_YEARS, data.getYears());
+        values.put(COLUMN_STARS, data.getStars());
+        String condition = COLUMN_ID + "= ?";
+        String[] args = {String.valueOf(data.getId())};
+        int result = db.update(TABLE_NOTE, values, condition, args);
+        db.close();
+        return result;
     }
 
     public int deleteSong(int id){

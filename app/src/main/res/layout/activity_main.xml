@@ -145,4 +145,10 @@
         android:layout_height="wrap_content"
         android:text="@string/cancel" />
 
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show List" />
+
 </LinearLayout>

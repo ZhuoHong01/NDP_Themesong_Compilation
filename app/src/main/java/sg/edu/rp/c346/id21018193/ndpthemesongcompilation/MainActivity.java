@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class MainActivity<data> extends AppCompatActivity {
 
-    Button btnUpdate, btnDelete, btnCancel;
+    Button btnUpdate, btnDelete, btnCancel, btnShow;
     RadioButton rbtn1, rbtn2, rbtn3, rbtn4, rbtn5;
     TextView tvID, tvTitle, tvSingers, tvYear, tvStars;
     EditText etID, etTitle, etSingers, etYear;
@@ -33,6 +33,7 @@ public class MainActivity<data> extends AppCompatActivity {
         btnUpdate = findViewById(R.id.btnUpdate);
         btnDelete = findViewById(R.id.btnDelete);
         btnCancel = findViewById(R.id.btnCancel);
+        btnShow = findViewById(R.id.btnShow);
         rbtn1 = findViewById(R.id.rbtn1);
         rbtn2 = findViewById(R.id.rbtn2);
         rbtn3 = findViewById(R.id.rbtn3);
@@ -72,6 +73,18 @@ public class MainActivity<data> extends AppCompatActivity {
         });
 
         btnUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DBHelper dbh = new DBHelper(MainActivity.this);
+                data.setTitle(etTitle.getText().toString());
+                data.setSingers(etSingers.getText().toString());
+                data.setYear(etYear.getText().toString());
+                dbh.updateSong(data);
+                dbh.close();
+            }
+        });
+
+        btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Song target = al.get(0);

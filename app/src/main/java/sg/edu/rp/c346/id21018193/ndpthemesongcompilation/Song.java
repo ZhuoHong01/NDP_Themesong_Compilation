@@ -19,6 +19,7 @@ public class Song implements Serializable {
         this.stars = stars;
     }
 
+
     public int getId() {return id;}
     public String getTitle() {return title;}
     public String getSingers() {return singers;}
@@ -29,5 +30,17 @@ public class Song implements Serializable {
     @Override
     public String toString() {
         return id + "\n" + title  + "\n" + singers + "\n" +  years + "\n" + stars;
+    }
+
+    public String setTitle(String toString) {
+        return title;
+    }
+
+    public String setSingers(String toString) {
+        return singers;
+    }
+
+    public int setYear(String toString) {
+        return years;
     }
 }
