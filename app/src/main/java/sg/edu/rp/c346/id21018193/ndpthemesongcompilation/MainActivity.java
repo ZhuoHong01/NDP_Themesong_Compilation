@@ -43,5 +43,11 @@ public class MainActivity extends AppCompatActivity {
         etTitle = findViewById(R.id.etTitle);
         etSingers = findViewById(R.id.etSingers);
         etYear = findViewById(R.id.etYear);
+
+        al = new ArrayList<Song>();
+        aa = new ArrayAdapter<Song>(this,
+                android.R.layout.simple_list_item_1, al);
+
+
     }
 }
