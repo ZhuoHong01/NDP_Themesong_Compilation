@@ -103,7 +103,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="casual"
-            android:text="@string/_1" />
+            android:text="@string/_1"
+            tools:ignore="TextContrastCheck" />
 
         <RadioButton
             android:id="@+id/rbtn2"
@@ -111,7 +112,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="casual"
-            android:text="@string/_2" />
+            android:text="@string/_2"
+            tools:ignore="TextContrastCheck" />
 
         <RadioButton
             android:id="@+id/rbtn3"
@@ -119,7 +121,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="casual"
-            android:text="@string/_3" />
+            android:text="@string/_3"
+            tools:ignore="TextContrastCheck" />
 
         <RadioButton
             android:id="@+id/rbtn4"
@@ -127,7 +130,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="casual"
-            android:text="@string/_4" />
+            android:text="@string/_4"
+            tools:ignore="TextContrastCheck" />
 
         <RadioButton
             android:id="@+id/rbtn5"
@@ -135,7 +139,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="casual"
-            android:text="@string/_5" />
+            android:text="@string/_5"
+            tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -145,6 +150,7 @@
 
         <Button
             android:id="@+id/btnUpdate"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -152,16 +158,19 @@
             android:gravity="center"
             android:text="@string/update"
             android:typeface="normal"
-            app:backgroundTint="#488EC5" />
+            app:backgroundTint="#488EC5"
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/btnDelete"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/delete"
-            app:backgroundTint="#557CB8" />
+            app:backgroundTint="#557CB8"
+            tools:ignore="TextContrastCheck" />
 
     </LinearLayout>
 

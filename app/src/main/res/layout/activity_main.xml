@@ -14,7 +14,7 @@
         android:fontFamily="casual"
         android:gravity="center"
         android:text="@string/song_title"
-        android:textColor="#4268DD"
+        android:textColor="#3949AB"
         android:textSize="16sp" />
 
     <EditText
@@ -25,7 +25,7 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Enter Song Title" />
+        android:text="@string/enter_song_title" />
 
     <TextView
         android:id="@+id/tvSingers"
@@ -45,7 +45,7 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Enter Singer Name" />
+        android:text="@string/enter_singer_name" />
 
     <TextView
         android:id="@+id/tvYear"
@@ -65,7 +65,7 @@
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Enter Year" />
+        android:text="@string/enter_year" />
 
     <TextView
         android:id="@+id/tvStars"
@@ -85,8 +85,9 @@
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/_1"
-            android:textColor="#386FC5"
-            android:textSize="14sp" />
+            android:textColor="#455A64"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
 
         <RadioButton
             android:id="@+id/rbtn2"
@@ -96,7 +97,8 @@
             android:fontFamily="casual"
             android:text="@string/_2"
             android:textColor="#386FC5"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
 
         <RadioButton
             android:id="@+id/rbtn3"
@@ -106,7 +108,8 @@
             android:fontFamily="casual"
             android:text="@string/_3"
             android:textColor="#386FC5"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
 
         <RadioButton
             android:id="@+id/rbtn4"
@@ -115,8 +118,9 @@
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/_4"
-            android:textColor="#386FC5"
-            android:textSize="14sp" />
+            android:textColor="#455A64"
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
 
         <RadioButton
             android:id="@+id/rbtn5"
@@ -126,7 +130,8 @@
             android:fontFamily="casual"
             android:text="@string/_5"
             android:textColor="#386FC5"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -140,10 +145,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="casual"
-            android:text="Show List"
+            android:text="@string/show_list"
             android:textColor="#F4F7FB"
             android:textSize="14sp"
-            app:backgroundTint="#3FA0BD" />
+            app:backgroundTint="#3FA0BD"
+            tools:ignore="TextContrastCheck"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/btnInsert"
@@ -151,10 +158,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="casual"
-            android:text="insert"
+            android:text="@string/insert"
             android:textColor="#F0F3F8"
             android:textSize="14sp"
-            app:backgroundTint="#75A9D3" />
+            app:backgroundTint="#75A9D3"
+            tools:ignore="TextContrastCheck"
+            style="?android:attr/buttonBarButtonStyle" />
 
     </LinearLayout>
 

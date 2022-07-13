@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="casual"
         android:text="Show Songs"
+        android:textColor="#212121"
         android:textSize="16sp"
         app:backgroundTint="#4C8AEA" />
 

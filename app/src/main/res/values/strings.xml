@@ -14,4 +14,9 @@
     <string name="update">Update</string>
     <string name="delete">Delete</string>
     <string name="cancel">cancel</string>
+    <string name="enter_singer_name">Enter Singer Name</string>
+    <string name="show_list">Show List</string>
+    <string name="insert">insert</string>
+    <string name="enter_song_title">Enter Song Title</string>
+    <string name="enter_year">Enter Year</string>
 </resources>
