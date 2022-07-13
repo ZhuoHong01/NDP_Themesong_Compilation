@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">NDP Themesong Compilation</string>
     <string name="song_id">Song ID</string>
+    <string name="_1">1</string>
+    <string name="song_title">Song Title</string>
+    <string name="singers">Singers</string>
+    <string name="year">Year</string>
+    <string name="stars">Stars</string>
+    <string name="string_stars" />
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">cancel</string>
 </resources>

@@ -27,8 +27,8 @@ public class DBHelper extends SQLiteOpenHelper{
         String createNoteTableSql = "CREATE TABLE " + TABLE_NOTE + "("
                 + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
                 + COLUMN_TITLE + " TEXT, "
-                + COLUMN_YEARS + " TEXT, "
-                + COLUMN_STARS + " TEXT, "
+                + COLUMN_YEARS + " INTEGER, "
+                + COLUMN_STARS + " INTEGER, "
                 + COLUMN_SINGERS + "TEXT )";
         sqLiteDatabase.execSQL(createNoteTableSql);
 

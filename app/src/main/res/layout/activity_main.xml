@@ -20,13 +20,14 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Song Title" />
+        android:text="@string/song_title" />
 
     <EditText
         android:id="@+id/etTitle"
@@ -35,13 +36,14 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/tvSingers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Singers" />
+        android:text="@string/singers" />
 
     <EditText
         android:id="@+id/etSingers"
@@ -50,13 +52,14 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/tvYear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Year" />
+        android:text="@string/year" />
 
     <EditText
         android:id="@+id/etYear"
@@ -65,13 +68,14 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:importantForAutofill="no" />
 
     <TextView
         android:id="@+id/tvStars"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Stars" />
+        android:text="@string/string_stars" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -83,35 +87,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="1" />
+            android:text="@string/_1" />
 
         <RadioButton
             android:id="@+id/rbtn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="2" />
+            android:text="@string/_2" />
 
         <RadioButton
             android:id="@+id/rbtn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="3" />
+            android:text="@string/_3" />
 
         <RadioButton
             android:id="@+id/rbtn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="4" />
+            android:text="@string/_4" />
 
         <RadioButton
             android:id="@+id/rbtn5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5" />
+            android:text="@string/_5" />
     </LinearLayout>
 
     <LinearLayout
@@ -124,14 +128,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Update" />
+            android:text="@string/update" />
 
         <Button
             android:id="@+id/btnDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Delete" />
+            android:text="@string/delete" />
 
     </LinearLayout>
 
@@ -139,6 +143,6 @@
         android:id="@+id/btnCancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="cancel" />
+        android:text="@string/cancel" />
 
 </LinearLayout>
