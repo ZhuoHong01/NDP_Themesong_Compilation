@@ -8,13 +8,12 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MainActivity<data> extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     Button btnInsert, btnShow;
     RadioButton rbtn1, rbtn2, rbtn3, rbtn4, rbtn5;
@@ -47,8 +46,8 @@ public class MainActivity<data> extends AppCompatActivity {
         Intent i = getIntent();
         data = (Song) i.getSerializableExtra("data");
 
-        al = new ArrayList<Song>();
-        aa = new ArrayAdapter<Song>(this,
+        al = new ArrayList<>();
+        aa = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, al);
 
         btnInsert.setOnClickListener(new View.OnClickListener() {

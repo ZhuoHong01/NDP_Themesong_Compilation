@@ -45,8 +45,8 @@ public class UpdateActivity extends AppCompatActivity {
             Intent i = getIntent();
             data = (Song) i.getSerializableExtra("data");
 
-            al = new ArrayList<Song>();
-            aa = new ArrayAdapter<Song>(this,
+            al = new ArrayList<>();
+            aa = new ArrayAdapter<>(this,
                     android.R.layout.simple_list_item_1, al);
 
 

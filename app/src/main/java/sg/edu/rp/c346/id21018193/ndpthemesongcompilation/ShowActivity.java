@@ -26,8 +26,8 @@ public class ShowActivity extends AppCompatActivity {
         btnShow = findViewById(R.id.btnShow);
         lv = findViewById(R.id.lv);
 
-        al = new ArrayList<Song>();
-        aa = new ArrayAdapter<Song>(this,
+        al = new ArrayList<>();
+        aa = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, al);
         lv.setAdapter(aa);
 
