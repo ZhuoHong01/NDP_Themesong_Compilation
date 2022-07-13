@@ -26,15 +26,21 @@ public class DBHelper extends SQLiteOpenHelper{
 
         String createNoteTableSql = "CREATE TABLE " + TABLE_NOTE + "("
                 + COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + COLUMN_TITLE + " TEXT ) ";
+                + COLUMN_TITLE + " TEXT, "
+                + COLUMN_YEARS + " TEXT, "
+                + COLUMN_STARS + " TEXT, "
+                + COLUMN_SINGERS + "TEXT )";
         sqLiteDatabase.execSQL(createNoteTableSql);
 
         Log.i("info", "created tables");
 
         //Dummy records, to be inserted when the database is created
-        for (int i = 0; i< 4; i++) {
+        for (int i = 0; i< 9; i++) {
             ContentValues values = new ContentValues();
             values.put(COLUMN_TITLE, "Data number " + i);
+            values.put(COLUMN_SINGERS, "Data number " + i);
+            values.put(COLUMN_YEARS, "Data number " + i);
+            values.put(COLUMN_STARS, "Data number " + i);
             sqLiteDatabase.insert(TABLE_NOTE, null, values);
         }
         Log.i("info", "dummy records inserted");
@@ -43,6 +49,7 @@ public class DBHelper extends SQLiteOpenHelper{
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+        sqLiteDatabase.execSQL("ALTER TABLE " + TABLE_NOTE + " ADD COLUMN  module_name TEXT ");
 
     }
 }
