@@ -2,7 +2,9 @@ package sg.edu.rp.c346.id21018193.ndpthemesongcompilation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -48,6 +50,32 @@ public class MainActivity extends AppCompatActivity {
         aa = new ArrayAdapter<Song>(this,
                 android.R.layout.simple_list_item_1, al);
 
+        btnCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        btnUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Song target = al.get(0);
+
+                Intent i = new Intent(MainActivity.this,
+                        ShowActivity.class);
+                i.putExtra("data", target);
+                startActivity(i);
+
+            }
+        });
 
     }
 }
