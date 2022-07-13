@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NDPThemesongCompilation">
         <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
             android:name=".ShowActivity"
             android:exported="false" />
         <activity
