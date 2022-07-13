@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NDP Themesong Compilation</string>
+    <string name="song_id">Song ID</string>
 </resources>
