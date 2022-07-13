@@ -10,6 +10,8 @@ public class Song implements Serializable {
     private String singers;
     private int years;
     private int stars;
+    private String toString;
+
 
     public Song(int id, String title, String singers, int years, int stars){
         this.id = id;
@@ -33,14 +35,17 @@ public class Song implements Serializable {
     }
 
     public String setTitle(String toString) {
+
         return title;
     }
 
     public String setSingers(String toString) {
+
         return singers;
     }
 
     public int setYear(String toString) {
+
         return years;
     }
 }
