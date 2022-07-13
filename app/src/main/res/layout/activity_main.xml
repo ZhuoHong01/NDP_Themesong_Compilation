@@ -15,7 +15,7 @@
         android:gravity="center"
         android:text="@string/song_title"
         android:textColor="#3949AB"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etTitle"
@@ -35,7 +35,7 @@
         android:gravity="center"
         android:text="@string/singers"
         android:textColor="#182391"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etSingers"
@@ -55,7 +55,7 @@
         android:gravity="center"
         android:text="@string/year"
         android:textColor="#182391"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etYear"
@@ -86,7 +86,7 @@
             android:fontFamily="casual"
             android:text="@string/_1"
             android:textColor="#455A64"
-            android:textSize="14sp"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
 
         <RadioButton
@@ -97,7 +97,7 @@
             android:fontFamily="casual"
             android:text="@string/_2"
             android:textColor="#386FC5"
-            android:textSize="14sp"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
 
         <RadioButton
@@ -108,7 +108,7 @@
             android:fontFamily="casual"
             android:text="@string/_3"
             android:textColor="#386FC5"
-            android:textSize="14sp"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
 
         <RadioButton
@@ -119,7 +119,7 @@
             android:fontFamily="casual"
             android:text="@string/_4"
             android:textColor="#455A64"
-            android:textSize="14sp"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
 
         <RadioButton
@@ -130,7 +130,7 @@
             android:fontFamily="casual"
             android:text="@string/_5"
             android:textColor="#386FC5"
-            android:textSize="14sp"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
@@ -141,29 +141,29 @@
 
         <Button
             android:id="@+id/btnShow"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/show_list"
             android:textColor="#F4F7FB"
-            android:textSize="14sp"
+            android:textSize="20sp"
             app:backgroundTint="#3FA0BD"
-            tools:ignore="TextContrastCheck"
-            style="?android:attr/buttonBarButtonStyle" />
+            tools:ignore="TextContrastCheck" />
 
         <Button
             android:id="@+id/btnInsert"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/insert"
             android:textColor="#F0F3F8"
-            android:textSize="14sp"
+            android:textSize="20sp"
             app:backgroundTint="#75A9D3"
-            tools:ignore="TextContrastCheck"
-            style="?android:attr/buttonBarButtonStyle" />
+            tools:ignore="TextContrastCheck" />
 
     </LinearLayout>
 

@@ -16,7 +16,7 @@
         android:gravity="center"
         android:text="@string/song_id"
         android:textColor="#194B73"
-        android:textSize="14sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etID"
@@ -35,7 +35,8 @@
         android:fontFamily="casual"
         android:gravity="center"
         android:text="@string/song_title"
-        android:textColor="#01579B" />
+        android:textColor="#01579B"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etTitle"
@@ -54,7 +55,8 @@
         android:fontFamily="casual"
         android:gravity="center"
         android:text="@string/singers"
-        android:textColor="#01579B" />
+        android:textColor="#01579B"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etSingers"
@@ -74,7 +76,8 @@
         android:gravity="center"
         android:text="@string/year"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#01579B" />
+        android:textColor="#01579B"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/etYear"
@@ -104,6 +107,7 @@
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/_1"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
 
         <RadioButton
@@ -113,6 +117,7 @@
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/_2"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
 
         <RadioButton
@@ -122,6 +127,7 @@
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/_3"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
 
         <RadioButton
@@ -131,6 +137,7 @@
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/_4"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
 
         <RadioButton
@@ -140,6 +147,7 @@
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/_5"
+            android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
@@ -157,6 +165,7 @@
             android:fontFamily="casual"
             android:gravity="center"
             android:text="@string/update"
+            android:textSize="20sp"
             android:typeface="normal"
             app:backgroundTint="#488EC5"
             tools:ignore="TextContrastCheck" />
@@ -169,6 +178,7 @@
             android:layout_weight="1"
             android:fontFamily="casual"
             android:text="@string/delete"
+            android:textSize="20sp"
             app:backgroundTint="#557CB8"
             tools:ignore="TextContrastCheck" />
 
@@ -179,6 +189,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="@string/cancel" />
+        android:text="@string/cancel"
+        android:textSize="20sp" />
 
 </LinearLayout>
