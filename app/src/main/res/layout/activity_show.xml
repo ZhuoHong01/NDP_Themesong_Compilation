@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="Show Songs"
+        android:text="@string/show_songs"
         android:textColor="#212121"
         android:textSize="20sp"
         app:backgroundTint="#4C8AEA" />
