@@ -38,10 +38,10 @@ public class CustomAdapter {
         Song song = alSong.get(position);
 
         // Set values to the TextView to display the corresponding information
-        tvTitle.setText(alSong.toString());
-        tvSingers.setText(alSong.toString());
-        tvStars.setText(alSong.toString());
-        tvDate.setText(alSong.toString());
+        tvTitle.setText(song.toString());
+        tvSingers.setText(song.toString());
+        tvStars.setText(song.toString());
+        tvDate.setText(song.toString());
 
 
         return rowView;
