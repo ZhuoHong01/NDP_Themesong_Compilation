@@ -73,7 +73,7 @@
         android:layout_height="wrap_content"
         android:text="@string/string_stars" />
 
-    <LinearLayout
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -132,7 +132,7 @@
             android:textColor="#386FC5"
             android:textSize="20sp"
             tools:ignore="TextContrastCheck" />
-    </LinearLayout>
+    </RadioGroup>
 
     <LinearLayout
         android:layout_width="match_parent"
