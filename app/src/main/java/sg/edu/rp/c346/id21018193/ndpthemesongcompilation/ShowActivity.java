@@ -29,9 +29,10 @@ public class ShowActivity extends AppCompatActivity {
         lv = findViewById(R.id.lv);
 
         al = new ArrayList<>();
-        aa = new ArrayAdapter<>(this,
-                android.R.layout.simple_list_item_1, al);
-        lv.setAdapter(aa);
+        ca = new CustomAdapter(this, R.layout.row, al);
+
+        lv.setAdapter((ListAdapter) ca);
+
 
         btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,9 +52,5 @@ public class ShowActivity extends AppCompatActivity {
 
             }
         });
-
-        ca = new CustomAdapter(this, R.layout.row, al);
-
-        lv.setAdapter((ListAdapter) ca);
     }
 }
