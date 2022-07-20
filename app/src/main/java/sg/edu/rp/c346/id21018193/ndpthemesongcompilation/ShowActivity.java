@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -53,6 +54,6 @@ public class ShowActivity extends AppCompatActivity {
 
         ca = new CustomAdapter(this, R.layout.row, al);
 
-        lv.setAdapter(ca);
+        lv.setAdapter((ListAdapter) ca);
     }
 }
