@@ -65,11 +65,8 @@ public class MainActivity extends AppCompatActivity {
         btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Song target = al.get(1);
-
                 Intent i = new Intent(MainActivity.this,
                         ShowActivity.class);
-                i.putExtra("data", target);
                 startActivity(i);
 
             }
