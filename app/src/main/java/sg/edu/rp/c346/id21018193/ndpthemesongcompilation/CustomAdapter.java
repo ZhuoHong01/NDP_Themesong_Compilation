@@ -4,17 +4,18 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class CustomAdapter {
+public class CustomAdapter extends ArrayAdapter {
     Context parent_context;
     int layout_id;
     ArrayList<Song> alSong;
 
     public CustomAdapter(Context context, int resource, ArrayList<Song> objects) {
-        //super(context, resource, objects);
+        super(context, resource, objects);
         parent_context = context;
         layout_id = resource;
         alSong = objects;

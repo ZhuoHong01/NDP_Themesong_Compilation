@@ -31,7 +31,7 @@ public class ShowActivity extends AppCompatActivity {
         al = new ArrayList<>();
         ca = new CustomAdapter(this, R.layout.row, al);
 
-        lv.setAdapter((ListAdapter) ca);
+        lv.setAdapter(ca);
 
 
         btnShow.setOnClickListener(new View.OnClickListener() {
