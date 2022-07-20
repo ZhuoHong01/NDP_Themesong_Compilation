@@ -14,7 +14,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class ShowActivity extends AppCompatActivity {
-    Button btnShow;
+    Button btnShow, btnBack;
     ArrayList<Song> al;
     ListView lv;
     ArrayAdapter<Song> aa;
@@ -26,6 +26,7 @@ public class ShowActivity extends AppCompatActivity {
         setContentView(R.layout.activity_show);
 
         btnShow = findViewById(R.id.btnShow);
+        btnBack = findViewById(R.id.buttonBack);
         lv = findViewById(R.id.lv);
 
         al = new ArrayList<>();
@@ -38,6 +39,15 @@ public class ShowActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+            }
+        });
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(ShowActivity.this,
+                        MainActivity.class);
+                startActivity(i);
             }
         });
 
