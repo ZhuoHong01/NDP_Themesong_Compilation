@@ -14,7 +14,7 @@ public class CustomAdapter {
     ArrayList<Song> alSong;
 
     public CustomAdapter(Context context, int resource, ArrayList<Song> objects) {
-        super(context, resource, objects)
+        //super(context, resource, objects);
         parent_context = context;
         layout_id = resource;
         alSong = objects;
@@ -40,7 +40,8 @@ public class CustomAdapter {
 
         // Set values to the TextView to display the corresponding information
         tvTitle.setText(alSong.toString());
-
+        tvSingers.setText(alSong.toString());
+        tvStars.setText(alSong.toString());
         tvDate.setText(alSong.toString());
 
 
