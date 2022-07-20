@@ -54,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 DBHelper dbh = new DBHelper(MainActivity.this);
-                data.setTitle(etTitle.getText().toString());
-                data.setSingers(etSingers.getText().toString());
-                data.setYear(etYear.getText().toString());
+                tvSingers.setText("Singer: " + data.getSingers());
+                tvTitle.setText("Title: " + data.getTitle());
+                tvYear.setText("Year: " + data.getYears());
                 dbh.updateSong(data);
                 dbh.close();
             }
