@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Song target = al.get(1);
+                Song target = al.get(0);
 
                 Intent i = new Intent(MainActivity.this,
                         ShowActivity.class);
