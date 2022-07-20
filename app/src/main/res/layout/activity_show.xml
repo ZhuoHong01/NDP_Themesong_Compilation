@@ -21,7 +21,10 @@
         android:id="@+id/buttonBack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back to home page" />
+        android:fontFamily="casual"
+        android:text="Back to home page"
+        android:textSize="20sp"
+        app:backgroundTint="#1894B3" />
 
     <ListView
         android:id="@+id/lv"
