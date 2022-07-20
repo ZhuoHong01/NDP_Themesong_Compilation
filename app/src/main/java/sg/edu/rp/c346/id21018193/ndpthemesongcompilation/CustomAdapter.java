@@ -20,7 +20,6 @@ public class CustomAdapter {
         alSong = objects;
     }
 
-    @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Obtain the LayoutInflater object
         LayoutInflater inflater = (LayoutInflater)
