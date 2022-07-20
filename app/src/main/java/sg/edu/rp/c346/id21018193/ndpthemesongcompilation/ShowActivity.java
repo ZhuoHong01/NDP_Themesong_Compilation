@@ -46,7 +46,7 @@ public class ShowActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long identity) {
                 Song data = al.get(position);
                 Intent i = new Intent(ShowActivity.this,
-                        MainActivity.class);
+                        UpdateActivity.class);
                 i.putExtra("data",  data);
                 startActivity(i);
 
