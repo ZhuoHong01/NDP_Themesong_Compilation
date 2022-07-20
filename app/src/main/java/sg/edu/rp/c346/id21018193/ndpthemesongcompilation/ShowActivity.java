@@ -17,6 +17,7 @@ public class ShowActivity extends AppCompatActivity {
     ArrayList<Song> al;
     ListView lv;
     ArrayAdapter<Song> aa;
+    CustomAdapter ca;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,5 +50,9 @@ public class ShowActivity extends AppCompatActivity {
 
             }
         });
+
+        ca = new CustomAdapter(this, R.layout.row, al);
+
+        lv.setAdapter(ca);
     }
 }
